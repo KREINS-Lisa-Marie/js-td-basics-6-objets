@@ -25,16 +25,18 @@ const aurora={
     sante:150,
     force:25,
     xp:0,
-    decrire(){
-        console.log(`${this.nom} a ${this.sante} points de vie, ${this.force} en force et ${this.xp} points d'expérience`);
+
+    // methode décrire
+    decrire(){      // faut utiliser this. car on réutilise une valeur de l'objet dans la méthode
+        return `${this.nom} a ${this.sante} points de vie, ${this.force} en force et ${this.xp} points d'expérience`;
     }
 };
-aurora.decrire();
+console.log(aurora.decrire());
 console.log("Aurora apprend une nouvelle compétence");
-aurora.xp= 40;
-aurora.decrire();
+aurora.xp= 15;
+console.log(aurora.decrire());
 console.log("Aurora est blessée par une flèche");
-aurora.xp= 20;
+aurora.sante= 130;
 console.log("Aurora trouve un bracelet de force");
-aurora.xp= 30;
-aurora.decrire();
+aurora.force= 35;
+console.log(aurora.decrire());
