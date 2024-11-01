@@ -21,7 +21,33 @@ Implémente un calculateur de pourboire en utilisant les objets et les boucles.
     2°) un tableau qui contient les montants finaux payés (facture + pourboire).
 AIDE : Commence avec deux tableaux vides en tant que propriétés
         et remplis-les dans la boucle
+*/
+const montantFactures =[124, 48, 268, 180, 42];
+const calculateur = {
 
+
+    pourboire() {
+
+        for (let montantFacture of montantFactures) {
+            if (montantFacture < 50) {
+                donner = montantFacture * 0.2;
+            } else if (montantFacture >= 50 && montantFacture < 200) {
+                donner = montantFacture * 0.15;
+            } else {
+                donner = montantFacture * 0.10;
+
+            }
+        }
+    } const nouvellefacture = montantFacture + donner;
+    this.nouveauMontant = [nouvellefacture];
+
+}
+
+console.log(montantFactures);
+console.log()
+
+
+/*
 BONUS (EXTRA) APRÈS AVOIR FINI :
 
 La famille de Mark est aussi partie en vacances, et est allée dans 4 restaurants différents.
