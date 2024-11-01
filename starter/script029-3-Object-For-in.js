@@ -22,6 +22,10 @@ const mesFruits = {
 
 // Écris ton code ici
 
+
+for (let mesFruit of mesFruits) {
+  console.log( `Le fruit ${mesFruit} coûte ${mesFruits[i]}€`)
+}
 /*
 EXERCICE 2 :
 Parcours l'objet fruit pour afficher chacune de ses propriétés avec, pour chacune, sa valeur
