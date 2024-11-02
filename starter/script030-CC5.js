@@ -22,6 +22,108 @@ Implémente un calculateur de pourboire en utilisant les objets et les boucles.
 AIDE : Commence avec deux tableaux vides en tant que propriétés
         et remplis-les dans la boucle
 */
+
+
+const factures = [124, 48, 268, 180, 42];
+
+
+const pourboires= {
+     toutesfactures:[],
+     montantsFinaux:[],
+
+    calculerPourboire(){
+        for (const facture of factures) {
+            let pourboir = 0;
+            if (facture < 50) {
+                pourboir = facture * 0.2;
+            } else if (facture < 200) {
+                pourboir = facture * 0.15;
+            } else {
+                pourboir = facture * 0.1;
+            }
+            this.toutesfactures.push(facture);
+            let resultat = 0;
+            resultat = facture + pourboir;
+            this.montantsFinaux.push(resultat);
+        }
+
+    }
+
+};
+
+pourboires.calculerPourboire();
+
+
+console.log(pourboires.montantsFinaux);
+console.log(factures);
+console.log(pourboires.toutesfactures);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+ const factures = [124, 48, 268, 180, 42];
+const calculateur ={
+    const nouvelleFacture= [];
+    const montantsfinaux = [];
+
+    calculpourboire(){
+        for (const facture of factures) {
+            if (facture<50){
+                let pourboire= facture * 0.2;
+            }else if (facture>=50 && facture<200){
+                let pourboire= facture * 0.15;
+            }else {
+                let pourboire= facture * 0.1;
+            }
+        }
+
+    },
+
+
+
+};
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
 const montantFactures =[124, 48, 268, 180, 42];
 const calculateur = {
 
@@ -45,7 +147,7 @@ const calculateur = {
 
 console.log(montantFactures);
 console.log()
-
+*/
 
 /*
 BONUS (EXTRA) APRÈS AVOIR FINI :
