@@ -135,7 +135,13 @@ console.log(moyenneMark);
 
 
 
-
+if (moyenneJohn > moyenneMark) {
+    console.log("La famille de John a payé un pourboire plus élevé en moyenne.");
+} else if (moyenneMark > moyenneJohn) {
+    console.log("La famille de Mark a payé un pourboire plus élevé en moyenne.");
+} else {
+    console.log("Les deux familles ont payé le même pourboire en moyenne.");
+}
 
 
 
